@@ -64,3 +64,58 @@ grid-template-rows: 1fr;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
 }
+.body{
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-row: 1fr 1fr;
+}
+.yourProject{
+    grid-area: 1/1/3/2;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    grid-template-rows: repeat(auto-fill,300px) ;
+    gap: 20px;
+    padding: 20px;
+    background-color: aliceblue;
+}
+.yourProject>div{
+display: grid;
+background-color: blueviolet;
+padding: 20px;
+}
+.cardicons{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: end;
+}
+.announcement{
+    grid-area: 1/2 /2/3;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+.trending{
+    grid-area: 2/2/ 3 /3;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+.announcementtexts{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+.trending{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: start;
+    padding: 15px;
+}
+.trending>div{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+
+}
+.trending img{
+    width: 50px;
+}
